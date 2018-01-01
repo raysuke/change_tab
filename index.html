@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="change_tab.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$(function(){
+			$('.tab').changeTab('.contents',{
+				'fade': true,
+				'fadeTime': 300,
+			});
+		});
+	</script>
+</head>
+<body>
+	<ul class="tab">
+		<li>タブ1</li>
+		<li>タブ2</li>
+		<li>タブ3</li>
+		<li>タブ4</li>
+	</ul>
+	<div class="contents">
+		<div>コンテンツ1</div>
+		<div>コンテンツ2</div>
+		<div>コンテンツ3</div>
+		<div>コンテンツ4</div>
+	</div>
+	<ul class="tab">
+		<li>タブ5</li>
+		<li>タブ6</li>
+		<li>タブ7</li>
+		<li>タブ8</li>
+	</ul>
+	<div class="contents">
+		<div>コンテンツ5</div>
+		<div>コンテンツ6</div>
+		<div>コンテンツ7</div>
+		<div>コンテンツ8</div>
+	</div>
+</body>
+</html>
